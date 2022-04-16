@@ -6,7 +6,7 @@ const uid2 = require("uid2");
 
 const express = require("express");
 const cors = require("cors");
-app.use("cors");
+app.use(cors());
 const formidableMiddleware = require("express-formidable");
 const mongoose = require("mongoose");
 const app = express();
