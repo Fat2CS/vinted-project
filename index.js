@@ -6,10 +6,11 @@ const uid2 = require("uid2");
 
 const express = require("express");
 const cors = require("cors");
+const app = express();
 app.use(cors());
 const formidableMiddleware = require("express-formidable");
 const mongoose = require("mongoose");
-const app = express();
+
 app.use(formidableMiddleware());
 
 mongoose.connect(process.env.MONGODB_URI);
